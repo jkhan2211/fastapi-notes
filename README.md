@@ -24,9 +24,50 @@ An **API** (Application Programming Interface) is code that allows two programs 
 | `PUT`    | Update an existing resource                     | Edit data   |
 | `DELETE` | Delete a resource                               | Delete data |
 
+# Why FastAPI?
+
+**FastAPI** is a Python framework for building APIs, with built-in support for **asynchronous** programming.
+
+- Lets you make asynchronous requests (`async` / `await`).
+- Use **Python 3.10 or above** with FastAPI.
+
+## Performance
+
+- Speed-oriented: performance is a priority.
+- On par with **Node.js** and **Go**.
+- Much more performant than **Django REST Framework** and **Flask**.
+
+## Flexibility
+
+- **Django REST Framework** is less flexible: things have to be done in a certain way.
+- **FastAPI** is flexible and doesn't restrict you to a particular code structure.
+
+## Other Features
+
+- Validates data types for you.
+- When creating a schema for your API, you can define the data type of every field.
+- Can also build **GraphQL** APIs.
+- Built on open standards: **JSON**, **OAuth** and **OpenAPI**.
+
+## Faster to Code & Intuitive
+
+- Faster to develop an API compared to other frameworks.
+- Great editor support (autocomplete, type checking).
+
+## Production Ready
+
+- Can be used to create production-ready APIs that can be deployed right away.
+- Provides interactive, automatic documentation (Swagger UI at `/docs`, ReDoc at `/redoc`).
+
+| Framework             | Speed     | Flexibility | Async support |
+| --------------------- | --------- | ----------- | ------------- |
+| **FastAPI**           | Very fast | High        | Built in      |
+| Flask                 | Slower    | High        | Limited       |
+| Django REST Framework | Slower    | Opinionated | Limited       |
+
 # FastAPI Setup (Mac)
 
-Requires Python 3.6+.
+Requires Python 3.10+.
 
 ```bash
 # 1. Create a virtual environment named "env"
@@ -130,6 +171,4 @@ def profile(user_id: int, commentid: int):
 - Route order matters: fixed routes go before dynamic ones.
 - Try every route in the interactive docs at `http://127.0.0.1:8000/docs`.
 
-# Things to Come Back To
 
-- [ ] Introduction to FastAPI: why it's used now
